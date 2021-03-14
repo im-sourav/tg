@@ -500,9 +500,9 @@ function allInOne() {
   // for touch rotate and down
   function RDend() {
     bs = false;
-    FD.currentTime = 0;
     update();
     if (b < 20) {
+      p.rotate();
     }
     b = 0;
     a = 0;
