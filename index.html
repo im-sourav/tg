@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#161616"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TatrisGame</title>
+    <link rel="shortcut icon" type="image/png" href="./resource/icon.png" id="icon">
+    <link rel="stylesheet" href="style.css" />
+    <script src="pattern.js" defer></script>
+    <script src="main.js" defer></script>
+  </head>  
+  <body>
+    <p id="single">Single Tap For Rotate</p>
+    <div class="allBTN"><p id="Button">Start!</p>
+
+      <a id="Button1" href="http://127.0.0.1:5500/Tetris%20Game/index.html">
+        <i id="i">Youre Score : 000</i>
+        <p id="p"> ReStart</p>
+      </a>
+    </div>
+    <div id="tuchScrin"><p class="into" id="x1"></p></div> 
+
+    <div id="tuchScrin2"><p id="x"></p></div>  
+ 
+    <div id="tuchScrin3"><p class="into" id="x2"></p></div>   
+    
+    <div class="img"><div class="me"></div></div>
+
+    <p class="name">Made By Sourav</p>  
+    <div class="all">
+      <div class="contaner"> 
+        <div class="textButton">
+          <p class="next"></p>  
+          <p class="SCORE"></p>   
+        </div>
+        <canvas id="canvas2" width="200" height="200"></canvas>
+        <canvas id="canvas" width="650" height="1200"></canvas>
+      </div>
+    </div>
+    <audio id="gameStart" src="./audio/startGame.mp3" type="audio/mpeg">
+    <audio id="clearLayer" src="./audio/clearLayer.mp3" type="audio/mpeg">
+    <audio id="follDown" src="./audio/follDown.mp3" type="audio/mpeg">
+    <audio id="gameEnd" src="./audio/gameEnd.mp3" type="audio/mpeg">
+    <audio id="mOVE" src="./audio/mOVE.mp3" type="audio/mpeg">
+    </audio>
+  </body> 
+</html>    
