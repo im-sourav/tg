@@ -491,8 +491,6 @@ function allInOne() {
     update();
     if (b < 20) {
       p.moveLeft();
-      M.pause(); //audio
-      M.currentTime = 0;
     }
     b = 0;
     a = 0;
@@ -502,12 +500,9 @@ function allInOne() {
   // for touch rotate and down
   function RDend() {
     bs = false;
-    FD.pause();
     FD.currentTime = 0;
     update();
     if (b < 20) {
-      p.rotate();
-      M.play();
     }
     b = 0;
     a = 0;
@@ -520,8 +515,6 @@ function allInOne() {
     update();
     if (b < 20) {
       p.moveRight();
-      M.pause();//audio
-      M.currentTime = 0;
     }
     b = 0;
     a = 0; 
@@ -536,17 +529,14 @@ function allInOne() {
 
       if (mx == "Down" && a == s) {
         p.moveDown();
-          FD.play();
         s = 3;
       }
       if (mx == "Left" && a == s) {
         p.moveLeft();
-        M.play();
         s = 3;
       }
       if (mx == "Right" && a == s) {
         p.moveRight();
-        M.play();
         s = 3;
       }
       if (a == 20 - df) {
